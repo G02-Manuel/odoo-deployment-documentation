@@ -102,6 +102,10 @@ export const Enviroment = () => {
                 <SmallImage
                     bin={addons_path}
                 />
+                <Body
+                    Tittle="Actualizar servicio"
+                    Element="sudo service odoo-server restart"
+                />
             </section>
         </article>
     );
