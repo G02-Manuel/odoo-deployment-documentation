@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import './Design.css'
 import './header.css';
 
 export const Tittle = ({ Tittle, Code }) => (
@@ -47,6 +47,18 @@ export const ImageShoot = ({ bin }) => (
         </div>
     </>
 );
+
+export const SmallImage = ({ bin }) => (
+    <>
+        <div>
+            <div>
+                <img style={{ width: 850, height: 150 }} src={bin} />
+            </div>
+        </div>
+    </>
+);
+
+
 
 Body.propTypes = {
     Tittle: PropTypes.string.isRequired,

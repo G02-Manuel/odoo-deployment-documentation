@@ -2,7 +2,6 @@ import React from 'react';
 import Code from './assets/code-brackets.svg';
 import { Header } from './Header';
 import { Tittle, Text, Body } from './Design';
-import './Install.css';
 
 export const Install = () => {
 

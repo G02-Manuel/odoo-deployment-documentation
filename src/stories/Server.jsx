@@ -4,7 +4,6 @@ import Odoo from './assets/odoo-create-database.png'
 import OdooService from './assets/odoo-service.png'
 import { Header } from './Header';
 import { Tittle, Text, Body, Image, ImageShoot } from './Design';
-import './Server.css';
 
 export const Server = () => {
 
@@ -14,7 +13,6 @@ export const Server = () => {
                 Tittle='Configuracion Del Servidor'
                 Name='Verificacion del Servidor'
             />
-
             <section>
                 <Tittle
                     Tittle='Puerto No Habilitado'
