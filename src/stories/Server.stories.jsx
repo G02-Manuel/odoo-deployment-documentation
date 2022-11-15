@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { Server } from './Server';
+import { Server, Enviroment } from './Server';
 
 export default {
     title: 'Deployment/Server',
-    component: Server,
+    component: Server, Enviroment,
     parameters: {
         // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
         layout: 'fullscreen',
@@ -12,6 +12,9 @@ export default {
 };
 
 const Template = (args) => <Server {...args} />;
+const Template2 = (args) => <Enviroment {...args} />;
 
 // More on interaction testing: https://storybook.js.org/docs/react/writing-tests/interaction-testing
-export const ServerConfiguration = Template.bind({});
+export const Configuration = Template.bind({});
+
+export const GeneralEnviroment = Template2.bind({});
