@@ -71,10 +71,17 @@ export const SmallImage = ({ bin }) => (
 
 Body.propTypes = {
     Tittle: PropTypes.string.isRequired,
-    Element: PropTypes.string.isRequired,
 }
 
 Body.defaultProps = {
+    user: null,
+}
+
+List.propTypes = {
+    Element: PropTypes.string.isRequired,
+}
+
+List.defaultProps = {
     user: null,
 }
 
@@ -88,9 +95,16 @@ Text.defaultProps = {
 
 Tittle.propTypes = {
     Tittle: PropTypes.string.isRequired,
-    Name: PropTypes.string.isRequired,
 };
 
 Tittle.defaultProps = {
+    user: null,
+};
+
+TittleOdoo.propTypes = {
+    Tittle: PropTypes.string.isRequired,
+};
+
+TittleOdoo.defaultProps = {
     user: null,
 };
