@@ -6,7 +6,7 @@ import OdooDirectory from './assets/odoo-directory.png';
 import addons_path from './assets/addons-path.png'
 import Repository from './assets/repository.png';
 import { Header } from './Header';
-import { Tittle, Text, Body, Image, ImageShoot, SmallImage } from './Design';
+import { Tittle, Text, Body, Image, ImageShoot, SmallImage, List } from './Design';
 
 export const Enviroment = () => {
     return (
@@ -34,6 +34,8 @@ export const Enviroment = () => {
                 />
                 <Body
                     Tittle="Abrir directorio"
+                />
+                <List
                     Element="cd custom"
                 />
                 <Text
@@ -50,6 +52,8 @@ export const Enviroment = () => {
                 />
                 <Body
                     Tittle="Clonar repositorio"
+                />
+                <List
                     Element="sudo git clone https://github.com/indexa-git/l10n-dominicana.git"
                 />
                 <Text
@@ -60,6 +64,8 @@ export const Enviroment = () => {
                 />
                 <Body
                     Tittle="Verificar rama del repositorio"
+                />
+                <List
                     Element="sudo git branch"
                 />
                 <br />
@@ -72,6 +78,8 @@ export const Enviroment = () => {
                 />
                 <Body
                     Tittle="Cambiar rama del repositorio"
+                />
+                <List
                     Element="sudo git checkout 12.0"
                 />
                 <Text
@@ -91,6 +99,8 @@ export const Enviroment = () => {
                 />
                 <Body
                     Tittle="Editar archivo .conf"
+                />
+                <List
                     Element="sudo nano /etc/odoo-server.conf"
                 />
                 <Text
@@ -104,6 +114,8 @@ export const Enviroment = () => {
                 />
                 <Body
                     Tittle="Actualizar servicio"
+                />
+                <List
                     Element="sudo service odoo-server restart"
                 />
             </section>

@@ -3,7 +3,7 @@ import StackAlt from './assets/stackalt.svg';
 import Odoo from './assets/odoo-create-database.png'
 import OdooService from './assets/odoo-service.png'
 import { Header } from './Header';
-import { Tittle, Text, Body, Image, ImageShoot } from './Design';
+import { Tittle, Text, Body, Image, ImageShoot, List } from './Design';
 
 export const Server = () => {
 
@@ -27,6 +27,8 @@ export const Server = () => {
                 />
                 <Body
                     Tittle='Comando para habilitar el puerto:'
+                />
+                <List
                     Element='sudo ufw allow "8069"/tcp'
                 />
                 <Text
@@ -51,10 +53,14 @@ export const Server = () => {
                 />
                 <Body
                     Tittle='Ingresamos a Postgresql:'
+                />
+                <List
                     Element='psql postgres'
                 />
                 <Body
                     Tittle='Crear usuario:'
+                />
+                <List
                     Element='CREATE ROLE "userExample" WITH LOGIN SUPERUSER PASSWORD `{"password"}`;'
                 />
                 <Text
@@ -65,6 +71,8 @@ export const Server = () => {
                 />
                 <Body
                     Tittle='Reiniciar Servicio'
+                />
+                <List
                     Element='sudo service odoo-server restart'
                 />
                 <br />
@@ -79,6 +87,8 @@ export const Server = () => {
                 />
                 <Body
                     Tittle='Ejecutar script:'
+                />
+                <List
                     Element='sudo ./odoo_install.sh'
                 />
                 <Text
@@ -87,6 +97,8 @@ export const Server = () => {
                 />
                 <Body
                     Tittle='Verificar estatus del servicio:'
+                />
+                <List
                     Element='sudo service odoo-server status'
                 />
                 <br />

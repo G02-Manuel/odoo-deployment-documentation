@@ -7,17 +7,26 @@ export const Tittle = ({ Tittle, Code }) => (
     <h2>{Tittle} <img src={Code} alt="code" /></h2>
 );
 
+export const TittleOdoo = ({ Tittle, Code }) => (
+    <h2>{Tittle} <img style={{ width: 100, height: 100 }} src={Code} /></h2>
+);
+
 export const Text = ({ Name }) => (
     <p>
         {Name}
     </p>
 );
 
-export const Body = ({ Tittle, Element }) => (
+export const Body = ({ Tittle }) => (
     <>
         <div>
             <h4>{Tittle}</h4>
         </div>
+    </>
+);
+
+export const List = ({ Element }) => (
+    <>
         <div className='inside-code-1'>
             <ul className='code-class'>
                 <li>

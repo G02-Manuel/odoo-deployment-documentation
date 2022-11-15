@@ -1,7 +1,7 @@
 import React from 'react';
 import Code from './assets/code-brackets.svg';
 import { Header } from './Header';
-import { Tittle, Text, Body } from './Design';
+import { Tittle, Text, Body, List } from './Design';
 
 export const Install = () => {
 
@@ -25,19 +25,27 @@ export const Install = () => {
                 />
                 <Body
                     Tittle='Descarga del Script:'
-                    Element='sudo wget https://raw.githubusercontent.com/Yenthe666/InstallScript/16.0/odoo_install.sh'
+                />
+                <List
+                    Element="sudo wget https://raw.githubusercontent.com/Yenthe666/InstallScript/16.0/odoo_install.sh"
                 />
                 <Body
                     Tittle='Modificacion de los parametros del servicio:'
-                    Element='sudo nano odoo_install.sh'
+                />
+                <List
+                    Element="sudo nano odoo_install.sh"
                 />
                 <Body
                     Tittle='Hacer el script ejecutable:'
-                    Element='sudo chmod +x odoo_install.sh'
+                />
+                <List
+                    Element="sudo chmod +x odoo_install.sh"
                 />
                 <Body
                     Tittle='Ejecutar el script:'
-                    Element='sudo ./odoo_install.sh'
+                />
+                <List
+                    Element="sudo ./odoo_install.sh"
                 />
                 <br />
                 <br />
@@ -53,6 +61,8 @@ export const Install = () => {
                 />
                 <Body
                     Tittle='Verificar Estatus '
+                />
+                <List
                     Element='sudo service "odoo-server" status'
                 />
                 <Text
@@ -60,6 +70,8 @@ export const Install = () => {
                 />
                 <Body
                     Tittle='Iniciar servicio'
+                />
+                <List
                     Element='sudo service "odoo-server" start'
                 />
                 <Text
@@ -67,6 +79,8 @@ export const Install = () => {
                 />
                 <Body
                     Tittle='Reiniciar el servicio'
+                />
+                <List
                     Element='sudo service "odoo-server" restart'
                 />
                 <Text
