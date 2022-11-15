@@ -121,6 +121,18 @@ section .tip-wrapper svg path {
     color: white;
 }
 
+.subheading {
+    --mediumdark: '#999999';
+    font-weight: 900;
+    font-size: 13px;
+    color: #999;
+    letter-spacing: 6px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    margin-top: 40px;
+}
+
 font {
     vertical-align: inherit;
 }
@@ -129,4 +141,4 @@ li {
     color: white;
 }
 
-/*# sourceMappingURL=main.31f24e8b.css.map*/
+/*# sourceMappingURL=main.f82ac43a.css.map*/
