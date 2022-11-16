@@ -4,6 +4,10 @@ import CompanyProperty from '../assets/company-property.png'
 import AccountProperty from '../assets/account-property.png'
 import PropertyDetail from '../assets/property-detail.png'
 import AccountImage from '../assets/Account.png'
+import PropertyValue from '../assets/property-value.png'
+import NewPropertyValue from '../assets/new-property-value.png'
+import IdAccount from '../assets/id-account.png'
+import ChartAccount from '../assets/new-chart-account.png'
 import { Header } from '../Header';
 import { Tittle, Text, Body, Image, SmallImage, ImageShoot, List, TittleOdoo } from '../Design';
 
@@ -51,6 +55,7 @@ export const Accounting = () => {
                     Name="Es necesario ingresar registro por registro para hacer las modificaciones."
                 />
                 <img style={{ width: 690, height: 300 }} src={PropertyDetail} />
+                <div className="subheading">Desconfiguracion</div>
                 <Body
                     Tittle="Verificar y modificar valores"
                 />
@@ -62,25 +67,50 @@ export const Accounting = () => {
                     account.account; en este ejemplo el 'id' 24 esta asociado a la cuenta '1105600' en mi ambiente."
                 />
                 <img style={{ width: 690, height: 400 }} src={AccountImage} />
-                {/* <Text
-                    Name="El odoo community por defecto no trae la capacidad de mostrar las aplicaciones instaladas de forma responsive al igual que la version Enterprise de este ERP."
+                <Text
+                    Name="En base a esta cuenta es necesario saber cual sera la nueva cuenta que va a sustituir la misma."
                 />
                 <Text
-                    Name="La solucion para convertir el manejo arcaico a responsive basta con hacer la instalacion del modulo web_respondive en la version correcta."
+                    Name="El siguiente paso a seguir es quitar el valor del id en el campo valor del registro y guardar el mismo; se hace con el objetivo de poder mantener la propiedad sin que se encuentre 
+                    dependiente del registro que vamos a eliminar."
                 />
                 <Body
-                    Tittle="Pasar Community a Responsive"
+                    Tittle="Modificar Valor"
                 />
                 <List
-                    Element="web_responsive"
+                    Element="account.account,"
                 />
                 <Text
-                    Name="Posterior a esto puede visualizar como se muestran los modulos de forma responsive en la pantalla de inicio."
+                    Name="El registro debe guardarse de esta forma para que no genere ninguna excepcion al momento de intentar borrar la cuenta contable asociada al mismo."
                 />
-                <img style={{ width: 800, height: 550 }} src={Odoobackground} />
+                <img style={{ width: 700, height: 440 }} src={PropertyValue} />
                 <Text
-                    Name="Este seria el resultado sin el fondo de pantalla en el ambiente."
-                /> */}
+                    Name="Posterior a realizar esto, ya puede proceder a eliminar el plan contable sin ninguna restriccion y posterior a esto puede importar el nuevo plan contable."
+                />
+                <Text
+                    Name="Luego de importar el nuevo catalogo de cuentas se procede a hacer el 'reverse' o configuracion de lo que intencionalmente se habia desconfigurado."
+                />
+                <div className="subheading">Configuracion</div>
+                <Text
+                    Name="En el nuevo catalogo de cuentas debemos seleccionar las cuentas pre-seleccionadas como sustitutas de las antiguas, tomar el 'id' y colocarlo en la propiedad de la compania correspodiente."
+                />
+                <Body
+                    Tittle="Nuevo Id"
+                />
+                <img style={{ width: 700, height: 150 }} src={IdAccount} />
+                <Text Name="Seleccionamos el valor del 'id' y lo colocamos en el campo valor despues del modelo en cuestion." />
+                <Body
+                    Tittle="Nuevo Valor"
+                />
+                <List
+                    Element="account.account,158"
+                />
+                <br />
+                <img style={{ width: 700, height: 440 }} src={NewPropertyValue} />
+                <Text
+                    Name="Posterior a colocar el id de los records en las propiedades de la compamia, ya el catalogo de cuentas debe estar importado y listo para empezar a utulizar las nuevas cuentas."
+                />
+                <img style={{ width: 790, height: 640 }} src={ChartAccount} />
             </section>
         </article>
     );
