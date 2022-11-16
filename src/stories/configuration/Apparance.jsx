@@ -4,7 +4,7 @@ import Odoobackground from '../assets/background.png'
 import BackendColor from '../assets/backend-color.png'
 import BackendPic from '../assets/background-pic.png'
 import { Header } from '../Header';
-import { Tittle, Text, Body, Image, SmallImage, ImageShoot, List } from '../Design';
+import { Tittle, Text, Body, List } from '../Design';
 
 export const Apparance = () => {
     return (

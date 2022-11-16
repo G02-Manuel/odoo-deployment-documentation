@@ -2,7 +2,7 @@ import React from "react";
 import OdooLogo from '../assets/odoo_logo_1.png'
 import OcaLogo from '../assets/OCA_Contributor_Logo.png'
 import { Header } from '../Header';
-import { Tittle, TittleOdoo, Text, Body, Image, ImageShoot, List } from '../Design';
+import { Tittle, TittleOdoo, Text, Body, List } from '../Design';
 
 export const OdooERP = () => {
     return (

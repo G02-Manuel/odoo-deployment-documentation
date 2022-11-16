@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import CaribeLogo from './assets/caribe-logo.png'
 
 import './header.css';
 

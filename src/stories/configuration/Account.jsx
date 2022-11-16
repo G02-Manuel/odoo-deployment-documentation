@@ -14,7 +14,7 @@ import DiarioSecuencia from '../assets/Diario-Secuencia.png'
 import GenerarNCF from '../assets/Generar-NCF.png'
 import SecuenciasNCF from '../assets/Secuencias-NCF.png'
 import { Header } from '../Header';
-import { Tittle, Text, Body, Image, SmallImage, ImageShoot, List, TittleOdoo } from '../Design';
+import { Text, Body, List, TittleOdoo } from '../Design';
 
 
 export const Accounting = () => {
