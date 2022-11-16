@@ -8,6 +8,11 @@ import PropertyValue from '../assets/property-value.png'
 import NewPropertyValue from '../assets/new-property-value.png'
 import IdAccount from '../assets/id-account.png'
 import ChartAccount from '../assets/new-chart-account.png'
+import Diarios from '../assets/Diarios.png'
+import DiarioNCF from '../assets/Diario-NCF.png'
+import DiarioSecuencia from '../assets/Diario-Secuencia.png'
+import GenerarNCF from '../assets/Generar-NCF.png'
+import SecuenciasNCF from '../assets/Secuencias-NCF.png'
 import { Header } from '../Header';
 import { Tittle, Text, Body, Image, SmallImage, ImageShoot, List, TittleOdoo } from '../Design';
 
@@ -111,6 +116,56 @@ export const Accounting = () => {
                     Name="Posterior a colocar el id de los records en las propiedades de la compamia, ya el catalogo de cuentas debe estar importado y listo para empezar a utulizar las nuevas cuentas."
                 />
                 <img style={{ width: 790, height: 640 }} src={ChartAccount} />
+            </section>
+        </article>
+    );
+}
+
+export const NCFGeneration = () => {
+    return (
+        <article>
+            <Header
+                Tittle="Configuracion"
+                Name="NCF"
+            />
+            <section>
+                <TittleOdoo
+                    Tittle="NCF"
+                    Code={CaribeLogo}
+                />
+                <Text
+                    Name="En este apartado vamos a generar las secuencias de ncf para los diarios contables que se encuentren marcados con el 'check' control NCF."
+                />
+                <Text
+                    Name="En primera instancea vamos a buscar los diarios contables que se encuentran en el ambiente ingresando a la parte de diarios en el modulo de contabilidad."
+                />
+                <Body
+                    Tittle="Ruta"
+                />
+                <List
+                    Element="Contabilidad > Configuracion > Diarios"
+                />
+                <br />
+                <img style={{ width: 730, height: 560 }} src={Diarios} />
+                <Text
+                    Name="Si no sabes con exactitud los diarios que llevan control de ncf, podemos revisar al detalle cada uno y generar las secuencias."
+                />
+                <Body
+                    Tittle="Diarios con control de NCF"
+                />
+                <img style={{ width: 730, height: 560 }} src={DiarioNCF} />
+                <Text
+                    Name="Si nos desplazamos a la pagina 'Secuencias NCF', solo debe haber un registro, de ser asi, se deben generar todas las secuencias."
+                />
+                <img style={{ width: 730, height: 560 }} src={DiarioSecuencia} />
+                <Text
+                    Name="Posterior a la verificacion podemos hacer click en 'Generar NCF', esta accion debe crear todas las secuencias necesarias para las operaciones con los NCF."
+                />
+                <img style={{ width: 730, height: 560 }} src={GenerarNCF} />
+                <Text
+                    Name="Luego de hacer click podemos visualizar lo antes mencionado."
+                />
+                <img style={{ width: 730, height: 600 }} src={SecuenciasNCF} />
             </section>
         </article>
     );
