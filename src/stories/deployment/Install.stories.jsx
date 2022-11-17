@@ -11,7 +11,7 @@ export default {
     },
 };
 
-const Template = (args) => <Install {...args} />;
+const InstallTemplate = (args) => <Install {...args} />;
 
 // More on interaction testing: https://storybook.js.org/docs/react/writing-tests/interaction-testing
-export const InstallWithScript = Template.bind({});
+export const InstallWithScript = InstallTemplate.bind({});

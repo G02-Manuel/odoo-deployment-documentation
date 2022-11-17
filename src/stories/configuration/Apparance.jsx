@@ -6,7 +6,7 @@ import BackendPic from '../assets/background-pic.png'
 import { Header } from '../Header';
 import { Tittle, Text, Body, List } from '../Design';
 
-export const Apparance = () => {
+export const WebApp = () => {
     return (
         <article>
             <Header
@@ -42,7 +42,7 @@ export const Apparance = () => {
     );
 }
 
-export const Backend = () => {
+export const BackendApp = () => {
     return (
         <article>
             <Header

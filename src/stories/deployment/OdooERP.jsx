@@ -4,7 +4,7 @@ import OcaLogo from '../assets/OCA_Contributor_Logo.png'
 import { Header } from '../Header';
 import { Tittle, TittleOdoo, Text, Body, List } from '../Design';
 
-export const OdooERP = () => {
+export const GeneralEnviroment = () => {
     return (
         <article>
             <Header
@@ -158,7 +158,7 @@ export const OdooERP = () => {
     );
 }
 
-export const ExternalModules = () => {
+export const ExternalModule = () => {
     return (
         <article>
             <Header

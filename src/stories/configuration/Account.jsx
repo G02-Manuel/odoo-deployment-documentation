@@ -17,7 +17,7 @@ import { Header } from '../Header';
 import { Text, Body, List, TittleOdoo } from '../Design';
 
 
-export const Accounting = () => {
+export const ChartAccountConf = () => {
     return (
         <article>
             <Header
@@ -121,7 +121,7 @@ export const Accounting = () => {
     );
 }
 
-export const NCFGeneration = () => {
+export const NCFConf = () => {
     return (
         <article>
             <Header
@@ -169,4 +169,8 @@ export const NCFGeneration = () => {
             </section>
         </article>
     );
+}
+
+export const FiscalYearConf = () => {
+    return (<></>);
 }
