@@ -16,6 +16,6 @@ const NCFTemplate = (args) => <NCFConf{...args} />;
 const FiscalYearTemplate = (args) => <FiscalYearConf {...args} />;
 
 // More on interaction testing: https://storybook.js.org/docs/react/writing-tests/interaction-testing
-export const ChartAccount = ChartAccountTemplate.bind({});
+export const ChartOfAccount = ChartAccountTemplate.bind({});
 export const NCFGenerate = NCFTemplate.bind({});
 export const FiscalYear = FiscalYearTemplate.bind({});

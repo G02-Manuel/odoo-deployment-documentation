@@ -13,6 +13,7 @@ import DiarioNCF from '../assets/Diario-NCF.png'
 import DiarioSecuencia from '../assets/Diario-Secuencia.png'
 import GenerarNCF from '../assets/Generar-NCF.png'
 import SecuenciasNCF from '../assets/Secuencias-NCF.png'
+import FiscalYear from '../assets/Fiscal-Year.png'
 import { Header } from '../Header';
 import { Text, Body, List, TittleOdoo } from '../Design';
 
@@ -172,5 +173,57 @@ export const NCFConf = () => {
 }
 
 export const FiscalYearConf = () => {
-    return (<></>);
+    return (
+        <selection>
+            <Header
+                Tittle="Configuracion"
+                Name="Parte Fiscal"
+            />
+            <section>
+                <TittleOdoo
+                    Tittle="Anio Fiscal"
+                    Code={CaribeLogo}
+                />
+                <Text
+                    Name="En terminos simples el anio fiscal hace referencia a la fecha de cierre contable de la empresa en cuestion."
+                />
+                <Text
+                    Name="Para realizar la configuracion de este necesitamos acceder a la configuracion del modulo de contabilidad, en el apartado de 'Periodos Fiscales'."
+                />
+                <Body
+                    Tittle="Ruta"
+                />
+                <List
+                    Element="Contabilidad > Configuracion > Configuracion  =>  Periodos Fiscales"
+                />
+                <br />
+                <img style={{ width: 730, height: 280 }} src={FiscalYear} />
+                <Text
+                    Name="Nota: Es necesario que el modulo 'account_fiscal_year' se encuentre instalado."
+                />
+                <div className="subheading">Modulos Adicionales</div>
+                <Text
+                    Name="Existe varios modulos que se puede utilizar para agregar mas funciones y generar una mejor experiencia al usuario, entre esos modulos destaco los siguientes:"
+                />
+                <Body
+                    Tittle="Account Move Fiscal Year"
+                />
+                <List
+                    Element="account_move_fiscal_year"
+                />
+                <Text
+                    Name="Este módulo extiende la funcionalidad del módulo de Contabilidad de Odoo, para generar automáticamente años fiscales."
+                />
+                <Text
+                    Name="Una vez instalado, se ejecuta un cron cada día. Creará, para cada empresa, un nuevo ejercicio fiscal, si es el último día del ejercicio fiscal en curso."
+                />
+                <Text
+                    Name="Este módulo es especialmente interesante en el contexto de varias empresas, para evitar la molesta configuración cada año."
+                />
+                <Text
+                    Name="El año fiscal creado tiene una duración clásica de “12 meses”, pero el contador puede modificarlo, una vez creado."
+                />
+            </section>
+        </selection>
+    );
 }
