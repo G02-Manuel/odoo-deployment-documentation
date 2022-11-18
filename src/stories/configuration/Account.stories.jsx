@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { ChartAccountConf, NCFConf, FiscalYearConf } from './Account';
+import { ChartAccountConf, NCFConf, FiscalYearConf, CurrencyConf } from './Account';
 
 export default {
     title: 'Configuration/Accounting',
-    component: ChartAccountConf, NCFConf, FiscalYearConf,
+    component: ChartAccountConf, NCFConf, FiscalYearConf, CurrencyConf,
     parameters: {
         // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
         layout: 'fullscreen',
@@ -14,8 +14,10 @@ export default {
 const ChartAccountTemplate = (args) => <ChartAccountConf {...args} />;
 const NCFTemplate = (args) => <NCFConf{...args} />;
 const FiscalYearTemplate = (args) => <FiscalYearConf {...args} />;
+const CurrencyConfTemplate = (args) => <CurrencyConf {...args} />;
 
 // More on interaction testing: https://storybook.js.org/docs/react/writing-tests/interaction-testing
 export const ChartOfAccount = ChartAccountTemplate.bind({});
 export const NCFGenerate = NCFTemplate.bind({});
 export const FiscalYear = FiscalYearTemplate.bind({});
+export const Currency = CurrencyConfTemplate.bind({});

@@ -17,6 +17,9 @@ import FiscalYear from '../assets/Fiscal-Year.png'
 import ClosingPeriod from '../assets/closing-period.png'
 import ClosingPeriodValue from '../assets/closing-period-value.png'
 import BlockPeriod from '../assets/block-period.png'
+import Currency from '../assets/Currencys.png'
+import Tasas from '../assets/Tasas.png'
+import TasasLog from '../assets/Tasas-Log.png'
 import { Header } from '../Header';
 import { Text, Body, List, TittleOdoo } from '../Design';
 
@@ -177,7 +180,7 @@ export const NCFConf = () => {
 
 export const FiscalYearConf = () => {
     return (
-        <selection>
+        <article>
             <Header
                 Tittle="Configuracion"
                 Name="Parte Fiscal"
@@ -265,6 +268,50 @@ export const FiscalYearConf = () => {
                     Name="No permitiria registrar ninguna operacion."
                 />
             </section>
-        </selection>
+        </article>
+    );
+}
+
+export const CurrencyConf = () => {
+    return (
+        <article>
+            <Header
+                Tittle="Configuracion"
+                Name="Divisas"
+            />
+            <section>
+                <TittleOdoo
+                    Tittle="Tasas"
+                    Code={CaribeLogo}
+                />
+                <Text
+                    Name="En este apartado mostramos como se debe colocar la tasa de las distintas monedas 
+                    en caso de que el ambiente se configure con estas caracteristicas; el calculo de la misma es bastante 
+                    simple, ya que la operacion que realiza es una division de 1 peso sobre la tasa de la moneda en cuestion."
+                />
+                <Text
+                    Name="Para configurar estas tasas nos dirigimos a la siguiente ruta:"
+                />
+                <List
+                    Element="Contabilidad > Configuracion > Monedas"
+                />
+                <br />
+                <img style={{ width: 650, height: 250 }} src={Currency} />
+                <Text
+                    Name="Aqui podemos visualizar y agregar nuevas divisas, asi como poder agrear y cambiar la tasa de cada una de estas."
+                />
+                <b><Text Name="Importante destacar que la tasa debe modificarse diariamente, ya que es un elemento variable diariamente." /></b>
+                <Text Name="Para realizar el cambio de la tasa, vamos a ingrear a una de las divisas." />
+                <img style={{ width: 650, height: 280 }} src={Tasas} />
+                <Text
+                    Name="Dentro de este apartado vamos a visualizar todas las tasas que se han agregado a esta divisa 
+                    con la fecha en la que se agrego."
+                />
+                <img style={{ width: 650, height: 320 }} src={TasasLog} />
+                <Text
+                    Name="Hacemos click en crear y agregamos la tasa del dia para esa divisa."
+                />
+            </section>
+        </article>
     );
 }
