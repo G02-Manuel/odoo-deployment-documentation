@@ -14,6 +14,9 @@ import DiarioSecuencia from '../assets/Diario-Secuencia.png'
 import GenerarNCF from '../assets/Generar-NCF.png'
 import SecuenciasNCF from '../assets/Secuencias-NCF.png'
 import FiscalYear from '../assets/Fiscal-Year.png'
+import ClosingPeriod from '../assets/closing-period.png'
+import ClosingPeriodValue from '../assets/closing-period-value.png'
+import BlockPeriod from '../assets/block-period.png'
 import { Header } from '../Header';
 import { Text, Body, List, TittleOdoo } from '../Design';
 
@@ -222,6 +225,44 @@ export const FiscalYearConf = () => {
                 />
                 <Text
                     Name="El año fiscal creado tiene una duración clásica de “12 meses”, pero el contador puede modificarlo, una vez creado."
+                />
+                <br />
+                <TittleOdoo
+                    Tittle="Cierre Fiscal"
+                    Code={CaribeLogo}
+                />
+                <Text
+                    Name="En Odoo no hay necesidad de hacer una entrada específica de cierre de fin de año para cerrar las cuentas del estado de resultados. Los informes se crean en tiempo real, lo que significa que el estado de resultados se corresponde directamente con la fecha de fin de año que especifique en Odoo."
+                />
+                <Text
+                    Name="Mas existe la opcion de configurar este periodo de cierre para llevar todo mas organizado."
+                />
+                <Body
+                    Tittle="Ruta"
+                />
+                <List
+                    Element="Contabilidad > Configuracion > Configuracion  =>  Periodos Fiscales"
+                />
+                <br />
+                <img style={{ width: 730, height: 280 }} src={ClosingPeriod} />
+                <Text
+                    Name="Colocar la fecha para realizar el cierre de las cuentas que componen el 'Estado de Resultado', lo que significa que no se podra realizar ninguna transaccion financiera antes de la fecha
+                    colocada en este apartado."
+                />
+                <Body
+                    Tittle="Ejemplo"
+                />
+                <img style={{ width: 730, height: 280 }} src={ClosingPeriodValue} />
+                <Text
+                    Name="En este ejemplo colocamos la fecha de bloqueo y la fecha de bloqueo para los responsables de contabilidad, ya que por la jerarquia de sus permisos pueden realizar modificaciones
+                     posteior a colocar la primera fecha."
+                />
+                <Text
+                    Name="Un claro ejemplo de que lo antes mencionado es este intento de crear una factura antes de la fecha que se tomo como bloqueo."
+                />
+                <img style={{ width: 850, height: 250 }} src={BlockPeriod} />
+                <Text
+                    Name="No permitiria registrar ninguna operacion."
                 />
             </section>
         </selection>
