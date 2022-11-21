@@ -20,6 +20,12 @@ import BlockPeriod from '../assets/block-period.png'
 import Currency from '../assets/Currencys.png'
 import Tasas from '../assets/Tasas.png'
 import TasasLog from '../assets/Tasas-Log.png'
+import DGII from '../assets/DGII.png'
+import DGIIReports from '../assets/DGII-Reports.png'
+import Exportable from '../assets/Exportables-DGII.png'
+import IT1 from '../assets/IT-1.png'
+import Extractos from '../assets/Extractos.png'
+import ConsumoFact from '../assets/Facturas-Consumo.png'
 import { Header } from '../Header';
 import { Text, Body, List, TittleOdoo } from '../Design';
 
@@ -311,6 +317,110 @@ export const CurrencyConf = () => {
                 <Text
                     Name="Hacemos click en crear y agregamos la tasa del dia para esa divisa."
                 />
+            </section>
+        </article>
+    );
+}
+
+export const DGIIReport = () => {
+    return (
+        <article>
+            <Header
+                Tittle="Informes"
+                Name="DGII"
+            />
+            <section>
+                <TittleOdoo
+                    Tittle="Declaraciones"
+                    Code={CaribeLogo}
+                />
+                <Text
+                    Name="En este apartado es donde se generan las declaraciones de los impuestos que posteriormete se presetan ante la DGII."
+                />
+                <Text
+                    Name="Para generar estos informes es necesario navegar hasta la opcion de DGII en el modulo de contabilidad."
+                />
+                <List
+                    Element="Contabilidad > DGII > Informes"
+                />
+                <br />
+                <img style={{ width: 650, height: 250 }} src={DGII} />
+                <Text
+                    Name="Al seleccionar los informes, si se han generados algunos con anterioridad se mostraran en este apartado."
+                />
+                <Text
+                    Name="En el mismo apartado se pueden generar, seleccionando 'crear' desplega un formulario en el cual lo unico que se debe seleccionar para generar los mismos, es la fecha. "
+                />
+                <img style={{ width: 660, height: 500 }} src={DGIIReports} />
+                <Text
+                    Name="Los reportes que se generan al seleccionar la fecha son los '606, 607, 608 y 609'."
+                />
+                <div className="subheading">Informes 606, 607, 608 y 609</div>
+                <Text
+                    Name="Definicion de cada informe que se generan."
+                />
+                <Body
+                    Tittle="606"
+                />
+                <Text
+                    Name="El formulario de envío 606 es utilizado para reportar la compra de bienes y servicios que incluyen número de comprobante fiscal (NCF), dicho reporte se debe realizar en los primeros 15 días de cada mes."
+                />
+                <Text
+                    Name="Con este formato se reportan los costos y gastos para fines del impuesto sobre la renta (ISR), aquí se debe plasmar el detalle de las ventas efectuadas durante el período correspondiente al reporte."
+                />
+                <Text
+                    Name="De igual manera, se deben reportar los adelantos utilizados, como créditos para fines del impuesto a las transferencias de bienes industrializados y servicios (ITBIS) y las retenciones del ITBIS realizadas a terceros."
+                />
+                <Body
+                    Tittle="607"
+                />
+                <Text
+                    Name="Este formulario es para presentar las ventas de bienes y servicios efectuadas por el contribuyente que incluyen NCF. Se deben remitir las informaciones de ventas y operaciones efectuadas y las retenciones del ITBIS y del ISR realizadas por terceros, sustentadas en facturas de crédito y comprobantes especiales."
+                />
+                <Body
+                    Tittle="608"
+                />
+                <Text
+                    Name="A través del formato de envío de comprobantes anulados 608, las empresas pueden reportar los NCF anulados. Este formulario es obligatorio para todas las empresas en cumplimiento de la norma general no. 07 – 2018."
+                />
+                <Body
+                    Tittle="609"
+                />
+                <Text
+                    Name="Los contribuyentes que realizan pagos por servicios al exterior utilizan este formato y están obligados a remitir mensualmente un reporte con el detalle de las transacciones de conformidad a lo establecido en la norma general no. 07 – 2018."
+                />
+                <Text
+                    Name="Para el reporte de cada uno de los anteriores formatos, la DGII tiene a disposición del contribuyente  en su portal web www.dgii.gov.do las indicaciones para el envío de dichas informaciones. Cabe destacar que durante este proceso es imprescindible la ayuda de un contable, para evitar cualquier error."
+                />
+                <div className="subheading">Extractos</div>
+                <Text
+                    Name="Posterior a la generar los reportes, se agrega un resumen distribuido por reportes, basados en monto de factura, impuestos, retenciones, etc..."
+                />
+                <img style={{ width: 660, height: 560 }} src={Extractos} />
+                <div className="subheading">Archivos .TXT</div>
+                <Text
+                    Name="En esta seccion es donde se colocan los documentos .txt exportables que se presentan ante la DGII."
+                />
+                <img style={{ width: 650, height: 300 }} src={Exportable} />
+                <Text
+                    Name="Los archivos se organizan en una columna haciendo referencia al reporte que pertenece."
+                />
+                <Text
+                    Name="Estos documentos generados poseen el formato establecido por la DGII en los reportes a presentar, se pueden descargar solo haciendo click."
+                />
+                <div className="subheading">IT 1</div>
+                <img style={{ width: 660, height: 650 }} src={IT1} />
+                <Text
+                    Name="Entre muchas de las obligaciones fiscales en República Dominicana, se encuentra el Impuesto sobre Transferencias de Bienes Industrializados y Servicios (ITBIS). En palabras simples, es un impuesto del tipo de valor agregado que grava el consumo de transferencia e importación de bienes y servicios industrializados nuevos o usados."
+                />
+                <Text
+                    Name="A través de una factura, el ITBIS tiene una dinámica que permite que el contribuyente pague solo por el valor añadido en el proceso productivo. ¿Cómo es esto posible? Al contribuyente se le descuenta el ITBIS pagado en las compras del ITBIS que se cobró al vender. "
+                />
+                <div className="subheading">Resumen General de Facturas de Consumo</div>
+                <Text
+                    Name="Esta seccion muestra un resumen de todas las facturas con cliente de consumo."
+                />
+                <img style={{ width: 660, height: 560 }} src={ConsumoFact} />
             </section>
         </article>
     );
