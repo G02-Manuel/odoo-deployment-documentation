@@ -61,18 +61,18 @@ export const ChartAccountConf = () => {
                     Element="Ajustes > Tecnico > Propiedades de la compania"
                 />
                 <br />
-                <img style={{ width: 690, height: 360 }} src={CompanyProperty} />
+                <img style={{ width: 690, height: 360, borderRadius: 20 }} src={CompanyProperty} />
                 <Text
                     Name="Vamos a filtrar por el nombre y que el mismo contenga el valor (account)"
                 />
-                <img style={{ width: 690, height: 360 }} src={AccountProperty} />
+                <img style={{ width: 690, height: 360, borderRadius: 20 }} src={AccountProperty} />
                 <Text
                     Name="Antes de continuar con el siguiente paso es fundamental resaltar que para realizar el proceso es necesario hacer una verificacion y determiar una equivalencia."
                 />
                 <Text
                     Name="Es necesario ingresar registro por registro para hacer las modificaciones."
                 />
-                <img style={{ width: 690, height: 300 }} src={PropertyDetail} />
+                <img style={{ width: 690, height: 300, borderRadius: 20 }} src={PropertyDetail} />
                 <div className="subheading">Desconfiguracion</div>
                 <Body
                     Tittle="Verificar y modificar valores"
@@ -84,7 +84,7 @@ export const ChartAccountConf = () => {
                     Name="El numero al final del modelo es el 'id' del registro al que esta asociada esta propiedad, para el proceso de verificacion vamos a tomar este 'id' y lo vamos a buscar en el modelo 
                     account.account; en este ejemplo el 'id' 24 esta asociado a la cuenta '1105600' en mi ambiente."
                 />
-                <img style={{ width: 690, height: 400 }} src={AccountImage} />
+                <img style={{ width: 690, height: 400, borderRadius: 20 }} src={AccountImage} />
                 <Text
                     Name="En base a esta cuenta es necesario saber cual sera la nueva cuenta que va a sustituir la misma."
                 />
@@ -101,7 +101,7 @@ export const ChartAccountConf = () => {
                 <Text
                     Name="El registro debe guardarse de esta forma para que no genere ninguna excepcion al momento de intentar borrar la cuenta contable asociada al mismo."
                 />
-                <img style={{ width: 700, height: 440 }} src={PropertyValue} />
+                <img style={{ width: 700, height: 440, borderRadius: 20 }} src={PropertyValue} />
                 <Text
                     Name="Posterior a realizar esto, ya puede proceder a eliminar el plan contable sin ninguna restriccion y posterior a esto puede importar el nuevo plan contable."
                 />
@@ -115,7 +115,7 @@ export const ChartAccountConf = () => {
                 <Body
                     Tittle="Nuevo Id"
                 />
-                <img style={{ width: 700, height: 150 }} src={IdAccount} />
+                <img style={{ width: 700, height: 150, borderRadius: 20 }} src={IdAccount} />
                 <Text Name="Seleccionamos el valor del 'id' y lo colocamos en el campo valor despues del modelo en cuestion." />
                 <Body
                     Tittle="Nuevo Valor"
@@ -124,11 +124,11 @@ export const ChartAccountConf = () => {
                     Element="account.account,158"
                 />
                 <br />
-                <img style={{ width: 700, height: 440 }} src={NewPropertyValue} />
+                <img style={{ width: 700, height: 440, borderRadius: 20 }} src={NewPropertyValue} />
                 <Text
                     Name="Posterior a colocar el id de los records en las propiedades de la compamia, ya el catalogo de cuentas debe estar importado y listo para empezar a utulizar las nuevas cuentas."
                 />
-                <img style={{ width: 790, height: 640 }} src={ChartAccount} />
+                <img style={{ width: 790, height: 640, borderRadius: 20 }} src={ChartAccount} />
             </section>
         </article>
     );
@@ -159,26 +159,26 @@ export const NCFConf = () => {
                     Element="Contabilidad > Configuracion > Diarios"
                 />
                 <br />
-                <img style={{ width: 730, height: 560 }} src={Diarios} />
+                <img style={{ width: 730, height: 560, borderRadius: 20 }} src={Diarios} />
                 <Text
                     Name="Si no sabes con exactitud los diarios que llevan control de ncf, podemos revisar al detalle cada uno y generar las secuencias."
                 />
                 <Body
                     Tittle="Diarios con control de NCF"
                 />
-                <img style={{ width: 730, height: 560 }} src={DiarioNCF} />
+                <img style={{ width: 730, height: 560, borderRadius: 20 }} src={DiarioNCF} />
                 <Text
                     Name="Si nos desplazamos a la pagina 'Secuencias NCF', solo debe haber un registro, de ser asi, se deben generar todas las secuencias."
                 />
-                <img style={{ width: 730, height: 560 }} src={DiarioSecuencia} />
+                <img style={{ width: 730, height: 560, borderRadius: 20 }} src={DiarioSecuencia} />
                 <Text
                     Name="Posterior a la verificacion podemos hacer click en 'Generar NCF', esta accion debe crear todas las secuencias necesarias para las operaciones con los NCF."
                 />
-                <img style={{ width: 730, height: 560 }} src={GenerarNCF} />
+                <img style={{ width: 730, height: 560, borderRadius: 20 }} src={GenerarNCF} />
                 <Text
                     Name="Luego de hacer click podemos visualizar lo antes mencionado."
                 />
-                <img style={{ width: 730, height: 600 }} src={SecuenciasNCF} />
+                <img style={{ width: 730, height: 600, borderRadius: 20 }} src={SecuenciasNCF} />
             </section>
         </article>
     );
@@ -209,7 +209,7 @@ export const FiscalYearConf = () => {
                     Element="Contabilidad > Configuracion > Configuracion  =>  Periodos Fiscales"
                 />
                 <br />
-                <img style={{ width: 730, height: 280 }} src={FiscalYear} />
+                <img style={{ width: 730, height: 280, borderRadius: 20 }} src={FiscalYear} />
                 <Text
                     Name="Nota: Es necesario que el modulo 'account_fiscal_year' se encuentre instalado."
                 />
@@ -253,7 +253,7 @@ export const FiscalYearConf = () => {
                     Element="Contabilidad > Configuracion > Configuracion  =>  Periodos Fiscales"
                 />
                 <br />
-                <img style={{ width: 730, height: 280 }} src={ClosingPeriod} />
+                <img style={{ width: 730, height: 280, borderRadius: 20 }} src={ClosingPeriod} />
                 <Text
                     Name="Colocar la fecha para realizar el cierre de las cuentas que componen el 'Estado de Resultado', lo que significa que no se podra realizar ninguna transaccion financiera antes de la fecha
                     colocada en este apartado."
@@ -261,7 +261,7 @@ export const FiscalYearConf = () => {
                 <Body
                     Tittle="Ejemplo"
                 />
-                <img style={{ width: 730, height: 280 }} src={ClosingPeriodValue} />
+                <img style={{ width: 730, height: 280, borderRadius: 20 }} src={ClosingPeriodValue} />
                 <Text
                     Name="En este ejemplo colocamos la fecha de bloqueo y la fecha de bloqueo para los responsables de contabilidad, ya que por la jerarquia de sus permisos pueden realizar modificaciones
                      posteior a colocar la primera fecha."
@@ -269,7 +269,7 @@ export const FiscalYearConf = () => {
                 <Text
                     Name="Un claro ejemplo de que lo antes mencionado es este intento de crear una factura antes de la fecha que se tomo como bloqueo."
                 />
-                <img style={{ width: 850, height: 250 }} src={BlockPeriod} />
+                <img style={{ width: 850, height: 250, borderRadius: 20 }} src={BlockPeriod} />
                 <Text
                     Name="No permitiria registrar ninguna operacion."
                 />
@@ -302,18 +302,18 @@ export const CurrencyConf = () => {
                     Element="Contabilidad > Configuracion > Monedas"
                 />
                 <br />
-                <img style={{ width: 650, height: 250 }} src={Currency} />
+                <img style={{ width: 650, height: 250, borderRadius: 20 }} src={Currency} />
                 <Text
                     Name="Aqui podemos visualizar y agregar nuevas divisas, asi como poder agrear y cambiar la tasa de cada una de estas."
                 />
                 <b><Text Name="Importante destacar que la tasa debe modificarse diariamente, ya que es un elemento variable diariamente." /></b>
                 <Text Name="Para realizar el cambio de la tasa, vamos a ingrear a una de las divisas." />
-                <img style={{ width: 650, height: 280 }} src={Tasas} />
+                <img style={{ width: 650, height: 280, borderRadius: 20 }} src={Tasas} />
                 <Text
                     Name="Dentro de este apartado vamos a visualizar todas las tasas que se han agregado a esta divisa 
                     con la fecha en la que se agrego."
                 />
-                <img style={{ width: 650, height: 320 }} src={TasasLog} />
+                <img style={{ width: 650, height: 320, borderRadius: 20 }} src={TasasLog} />
                 <Text
                     Name="Hacemos click en crear y agregamos la tasa del dia para esa divisa."
                 />
@@ -344,14 +344,14 @@ export const DGIIReport = () => {
                     Element="Contabilidad > DGII > Informes"
                 />
                 <br />
-                <img style={{ width: 650, height: 250 }} src={DGII} />
+                <img style={{ width: 650, height: 250, borderRadius: 20 }} src={DGII} />
                 <Text
                     Name="Al seleccionar los informes, si se han generados algunos con anterioridad se mostraran en este apartado."
                 />
                 <Text
                     Name="En el mismo apartado se pueden generar, seleccionando 'crear' desplega un formulario en el cual lo unico que se debe seleccionar para generar los mismos, es la fecha. "
                 />
-                <img style={{ width: 660, height: 500 }} src={DGIIReports} />
+                <img style={{ width: 660, height: 500, borderRadius: 20 }} src={DGIIReports} />
                 <Text
                     Name="Los reportes que se generan al seleccionar la fecha son los '606, 607, 608 y 609'."
                 />
@@ -396,12 +396,12 @@ export const DGIIReport = () => {
                 <Text
                     Name="Posterior a la generar los reportes, se agrega un resumen distribuido por reportes, basados en monto de factura, impuestos, retenciones, etc..."
                 />
-                <img style={{ width: 660, height: 560 }} src={Extractos} />
+                <img style={{ width: 660, height: 560, borderRadius: 20 }} src={Extractos} />
                 <div className="subheading">Archivos .TXT</div>
                 <Text
                     Name="En esta seccion es donde se colocan los documentos .txt exportables que se presentan ante la DGII."
                 />
-                <img style={{ width: 650, height: 300 }} src={Exportable} />
+                <img style={{ width: 650, height: 300, borderRadius: 20 }} src={Exportable} />
                 <Text
                     Name="Los archivos se organizan en una columna haciendo referencia al reporte que pertenece."
                 />
@@ -409,7 +409,7 @@ export const DGIIReport = () => {
                     Name="Estos documentos generados poseen el formato establecido por la DGII en los reportes a presentar, se pueden descargar solo haciendo click."
                 />
                 <div className="subheading">IT 1</div>
-                <img style={{ width: 660, height: 650 }} src={IT1} />
+                <img style={{ width: 660, height: 650, borderRadius: 20 }} src={IT1} />
                 <Text
                     Name="Entre muchas de las obligaciones fiscales en República Dominicana, se encuentra el Impuesto sobre Transferencias de Bienes Industrializados y Servicios (ITBIS). En palabras simples, es un impuesto del tipo de valor agregado que grava el consumo de transferencia e importación de bienes y servicios industrializados nuevos o usados."
                 />
@@ -420,7 +420,7 @@ export const DGIIReport = () => {
                 <Text
                     Name="Esta seccion muestra un resumen de todas las facturas con cliente de consumo."
                 />
-                <img style={{ width: 660, height: 560 }} src={ConsumoFact} />
+                <img style={{ width: 660, height: 560, borderRadius: 20 }} src={ConsumoFact} />
             </section>
         </article>
     );

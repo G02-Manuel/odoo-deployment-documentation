@@ -33,7 +33,7 @@ export const WebApp = () => {
                 <Text
                     Name="Posterior a esto puede visualizar como se muestran los modulos de forma responsive en la pantalla de inicio."
                 />
-                <img style={{ width: 800, height: 550 }} src={Odoobackground} />
+                <img style={{ width: 800, height: 550, borderRadius: 20 }} src={Odoobackground} />
                 <Text
                     Name="Este seria el resultado sin el fondo de pantalla en el ambiente."
                 />
@@ -72,12 +72,12 @@ export const BackendApp = () => {
                 <Body
                     Tittle="Backend Color"
                 />
-                <img style={{ width: 820, height: 590 }} src={BackendColor} />
+                <img style={{ width: 820, height: 590, borderRadius: 20 }} src={BackendColor} />
                 <br />
                 <Body
                     Tittle="Backend Pic"
                 />
-                <img style={{ width: 820, height: 590 }} src={BackendPic} />
+                <img style={{ width: 820, height: 590, borderRadius: 20 }} src={BackendPic} />
             </section>
         </article>
     );

@@ -61,7 +61,7 @@ export const SmallImage = ({ bin }) => (
     <>
         <div>
             <div>
-                <img style={{ width: 850, height: 150 }} src={bin} />
+                <img style={{ width: 850, height: 150, borderRadius: 20 }} src={bin} />
             </div>
         </div>
     </>
