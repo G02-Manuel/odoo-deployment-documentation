@@ -26,6 +26,7 @@ import Exportable from '../assets/Exportables-DGII.png'
 import IT1 from '../assets/IT-1.png'
 import Extractos from '../assets/Extractos.png'
 import ConsumoFact from '../assets/Facturas-Consumo.png'
+import Repo from '../assets/repo.svg';
 import { Header } from '../Header';
 import { Text, Body, List, TittleOdoo } from '../Design';
 
@@ -421,6 +422,82 @@ export const DGIIReport = () => {
                     Name="Esta seccion muestra un resumen de todas las facturas con cliente de consumo."
                 />
                 <img style={{ width: 660, height: 560, borderRadius: 20 }} src={ConsumoFact} />
+            </section>
+        </article>
+    );
+}
+
+export const DataTemplate = () => {
+
+    const FacturasClientes = () => {
+        let Name = '';
+        Name = 'FacturasClientes.xls';
+
+        // using Java Script method to get PDF file
+        fetch(Name).then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = Name;
+                alink.click();
+            })
+        });
+    }
+
+    const FacturasProveedores = () => {
+    }
+
+    const NotasCredito = () => {
+    }
+
+    const NotasDebito = () => {
+    }
+
+
+    return (
+        <article>
+            <Header
+                Tittle="Templates"
+                Name="Financieros"
+            />
+            <section>
+                <TittleOdoo
+                    Tittle="Plantillas Importar Informacion"
+                    Code={CaribeLogo}
+                />
+                <br />
+                <br />
+                <br />
+                <br />
+                <div className="link-list">
+                    <a className="link-item" onClick={FacturasClientes} target="_blank">
+                        <img src={Repo} alt="repo" />
+                        <span>
+                            <strong>Facturas Clientes</strong>
+                        </span>
+                    </a>
+                    <a className="link-item" onClick={FacturasProveedores} target="_blank">
+                        <img src={Repo} alt="repo" />
+                        <span>
+                            <strong>Facturas Proveedores</strong>
+                        </span>
+                    </a>
+                    <a className="link-item" onClick={NotasCredito} target="_blank">
+                        <img src={Repo} alt="repo" />
+                        <span>
+                            <strong>Notas de Credito</strong>
+                        </span>
+                    </a>
+                    <a className="link-item" onClick={NotasDebito} target="_blank">
+                        <img src={Repo} alt="repo" />
+                        <span>
+                            <strong>Notas de Debito</strong>
+                        </span>
+                    </a>
+                </div>
             </section>
         </article>
     );
