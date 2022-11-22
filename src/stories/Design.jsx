@@ -41,7 +41,7 @@ export const Image = ({ bin }) => (
     <>
         <div>
             <div>
-                <img style={{ width: 850, height: 650 }} src={bin} />
+                <img style={{ width: 850, height: 650, borderRadius: 20 }} src={bin} />
             </div>
         </div>
     </>
@@ -51,7 +51,7 @@ export const ImageShoot = ({ bin }) => (
     <>
         <div>
             <div>
-                <img style={{ width: 700, height: 300 }} src={bin} />
+                <img style={{ width: 700, height: 300, borderRadius: 20 }} src={bin} />
             </div>
         </div>
     </>
