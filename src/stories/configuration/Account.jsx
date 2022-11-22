@@ -448,6 +448,21 @@ export const DataTemplate = () => {
     }
 
     const FacturasProveedores = () => {
+        let Name = '';
+        Name = 'FacturasProveedores.xls';
+
+        // using Java Script method to get PDF file
+        fetch(Name).then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = Name;
+                alink.click();
+            })
+        });
     }
 
     const NotasCredito = () => {
