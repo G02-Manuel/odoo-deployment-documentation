@@ -466,9 +466,39 @@ export const DataTemplate = () => {
     }
 
     const NotasCredito = () => {
+        let Name = '';
+        Name = 'RectificativasClientes.xls';
+
+        // using Java Script method to get PDF file
+        fetch(Name).then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = Name;
+                alink.click();
+            })
+        });
     }
 
     const NotasDebito = () => {
+        let Name = '';
+        Name = 'RectificativasProveedores.xls';
+
+        // using Java Script method to get PDF file
+        fetch(Name).then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = Name;
+                alink.click();
+            })
+        });
     }
 
 
@@ -488,6 +518,7 @@ export const DataTemplate = () => {
                 <br />
                 <br />
                 <div className="link-list">
+                    <div className="subheading">Facturas Cliente/Proveedor</div>
                     <a className="link-item" onClick={FacturasClientes} target="_blank">
                         <img src={Repo} alt="repo" />
                         <span>
@@ -500,6 +531,7 @@ export const DataTemplate = () => {
                             <strong>Facturas Proveedores</strong>
                         </span>
                     </a>
+                    <div className="subheading">Facturas Rectificativas Cliente/Proveedor</div>
                     <a className="link-item" onClick={NotasCredito} target="_blank">
                         <img src={Repo} alt="repo" />
                         <span>
@@ -512,6 +544,7 @@ export const DataTemplate = () => {
                             <strong>Notas de Debito</strong>
                         </span>
                     </a>
+                    <div className="subheading">Pagos Cliente/Proveedor</div>
                 </div>
             </section>
         </article>
