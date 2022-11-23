@@ -4,7 +4,7 @@ import { Header } from '../Header';
 import { Tittle, Text, Body, List } from '../Design';
 
 export const Install = () => {
-
+    console.log('Hello');
     return (
         <article>
             <Header

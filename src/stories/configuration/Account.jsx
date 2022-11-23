@@ -27,6 +27,12 @@ import IT1 from '../assets/IT-1.png'
 import Extractos from '../assets/Extractos.png'
 import ConsumoFact from '../assets/Facturas-Consumo.png'
 import Repo from '../assets/repo.svg';
+import FacturasClientes from '../templates/FacturasClientes.xls'
+import FacturasProveedores from '../templates/FacturasProveedores.xls'
+import RectificativasClientes from '../templates/RectificativasClientes.xls'
+import RectificativasProveedores from '../templates/RectificativasProveedores.xls'
+import PagosClientes from '../templates/PagosClientes.xlsx'
+import PagosProveedores from '../templates/PagosProveedores.xlsx'
 import { Header } from '../Header';
 import { Text, Body, List, TittleOdoo } from '../Design';
 
@@ -429,78 +435,98 @@ export const DGIIReport = () => {
 
 export const DataTemplate = () => {
 
-    const FacturasClientes = () => {
-        let Name = '';
-        Name = 'FacturasClientes.xls';
+    const FacturasClientesMethod = () => {
 
         // using Java Script method to get PDF file
-        fetch(Name).then(response => {
+        fetch(FacturasClientes).then(response => {
             response.blob().then(blob => {
                 // Creating new object of PDF file
                 const fileURL = window.URL.createObjectURL(blob);
                 // Setting various property values
                 let alink = document.createElement('a');
                 alink.href = fileURL;
-                alink.download = Name;
+                alink.download = 'FacturasClientes.xls';
                 alink.click();
             })
         });
     }
 
-    const FacturasProveedores = () => {
-        let Name = '';
-        Name = 'FacturasProveedores.xls';
+    const FacturasProveedoresMethod = () => {
 
         // using Java Script method to get PDF file
-        fetch(Name).then(response => {
+        fetch(FacturasProveedores).then(response => {
             response.blob().then(blob => {
                 // Creating new object of PDF file
                 const fileURL = window.URL.createObjectURL(blob);
                 // Setting various property values
                 let alink = document.createElement('a');
                 alink.href = fileURL;
-                alink.download = Name;
+                alink.download = 'FacturasProveedores.xls';
                 alink.click();
             })
         });
     }
 
     const NotasCredito = () => {
-        let Name = '';
-        Name = 'RectificativasClientes.xls';
-
         // using Java Script method to get PDF file
-        fetch(Name).then(response => {
+        fetch(RectificativasClientes).then(response => {
             response.blob().then(blob => {
                 // Creating new object of PDF file
                 const fileURL = window.URL.createObjectURL(blob);
                 // Setting various property values
                 let alink = document.createElement('a');
                 alink.href = fileURL;
-                alink.download = Name;
+                alink.download = 'RectificativasClientes.xls';
                 alink.click();
             })
         });
     }
 
     const NotasDebito = () => {
-        let Name = '';
-        Name = 'RectificativasProveedores.xls';
 
         // using Java Script method to get PDF file
-        fetch(Name).then(response => {
+        fetch(RectificativasProveedores).then(response => {
             response.blob().then(blob => {
                 // Creating new object of PDF file
                 const fileURL = window.URL.createObjectURL(blob);
                 // Setting various property values
                 let alink = document.createElement('a');
                 alink.href = fileURL;
-                alink.download = Name;
+                alink.download = 'RectificativasProveedores.xls';
                 alink.click();
             })
         });
     }
 
+    const PagosClientesMethod = () => {
+        // using Java Script method to get PDF file
+        fetch(PagosClientes).then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'PagosClientes.xlsx';
+                alink.click();
+            })
+        });
+    }
+
+    const PagosProveedoresMethod = () => {
+        // using Java Script method to get PDF file
+        fetch(PagosProveedores).then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'PagosProveedores.xls';
+                alink.click();
+            })
+        });
+    }
 
     return (
         <article>
@@ -519,13 +545,13 @@ export const DataTemplate = () => {
                 <br />
                 <div className="link-list">
                     <div className="subheading">Facturas Cliente/Proveedor</div>
-                    <a className="link-item" onClick={FacturasClientes} target="_blank">
+                    <a className="link-item" onClick={FacturasClientesMethod} target="_blank">
                         <img src={Repo} alt="repo" />
                         <span>
                             <strong>Facturas Clientes</strong>
                         </span>
                     </a>
-                    <a className="link-item" onClick={FacturasProveedores} target="_blank">
+                    <a className="link-item" onClick={FacturasProveedoresMethod} target="_blank">
                         <img src={Repo} alt="repo" />
                         <span>
                             <strong>Facturas Proveedores</strong>
@@ -545,6 +571,18 @@ export const DataTemplate = () => {
                         </span>
                     </a>
                     <div className="subheading">Pagos Cliente/Proveedor</div>
+                    <a className="link-item" onClick={PagosClientesMethod} target="_blank">
+                        <img src={Repo} alt="repo" />
+                        <span>
+                            <strong>Pagos Clientes</strong>
+                        </span>
+                    </a>
+                    <a className="link-item" onClick={PagosProveedoresMethod} target="_blank">
+                        <img src={Repo} alt="repo" />
+                        <span>
+                            <strong>Pagos Proveedores</strong>
+                        </span>
+                    </a>
                 </div>
             </section>
         </article>
