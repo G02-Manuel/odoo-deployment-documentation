@@ -154,3 +154,8 @@ li {
     font-size: 14px;
     line-height: 20px;
 }
+
+.advertinsing {
+    background-color: white;
+    color: rgb(59, 145, 70);
+}

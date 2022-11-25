@@ -86,6 +86,15 @@ export const Install = () => {
                 <Text
                     Name='Este servicio se utiliza para reiniciar el servicio independientemente del estado en el que se encuentre el mismo.'
                 />
+                <Body
+                    Tittle='Detener el servicio'
+                />
+                <List
+                    Element='sudo service "odoo-server" stop'
+                />
+                <Text
+                    Name='Este servicio se utiliza para detener el servicio.'
+                />
             </section>
         </article>
     );

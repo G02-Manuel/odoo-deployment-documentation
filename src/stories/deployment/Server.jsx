@@ -11,13 +11,13 @@ import Repository from '../assets/repository.png';
 import { Header } from '../Header';
 import { Tittle, Text, Body, Image, SmallImage, ImageShoot, List } from '../Design';
 
-export const Server = () => {
+export const ServerMethod = () => {
 
     return (
         <article>
             <Header
-                Tittle='Configuracion Del Servidor'
-                Name='Verificacion del Servidor'
+                Tittle='Servidor'
+                Name='Configuracion del Servidor'
             />
             <section>
                 <Tittle
@@ -116,11 +116,11 @@ export const Server = () => {
     );
 };
 
-export const Enviroment = () => {
+export const EnviromentMethod = () => {
     return (
         <article>
             <Header
-                Tittle='Ambiente'
+                Tittle='Servidor'
                 Name='Modulos Externos'
             />
             <section>
@@ -230,4 +230,6 @@ export const Enviroment = () => {
         </article>
     );
 }
+
+
 

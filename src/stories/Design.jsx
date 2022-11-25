@@ -37,6 +37,14 @@ export const List = ({ Element }) => (
     </>
 );
 
+export const Advertising = ({ EText }) => (
+    <>
+        <div>
+            <p className='advertinsing'>{EText}</p>
+        </div>
+    </>
+);
+
 export const Image = ({ bin }) => (
     <>
         <div>
