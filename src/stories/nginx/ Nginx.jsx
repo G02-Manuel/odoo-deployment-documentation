@@ -79,27 +79,26 @@ export const NginxMehotd = () => {
                     Tittle='Upstream Odoo Chat'
                 />
                 <List
-                    Element='upstream odoo12chat {
-                    }'
+                    Element='upstream odoo12chat { }'
                 />
                 <div className="subheading">Dentro del parametro server</div>
                 <Body
                     Tittle='Long Polling'
                 />
                 <List
-                    Element='location /longpolling {}'
+                    Element='location /longpolling { }'
                 />
                 <Body
                     Tittle='Location'
                 />
                 <List
-                    Element='location / {}'
+                    Element='location / { }'
                 />
                 <Body
                     Tittle='Location ~*'
                 />
                 <List
-                    Element=' location ~* /[0-9a-zA-Z_]*/static/ {)'
+                    Element=' location ~* /[0-9a-zA-Z_]*/static/ { }'
                 />
                 <div className="link-list">
                     <div className="subheading">Parametros de Cofiguracion</div>
