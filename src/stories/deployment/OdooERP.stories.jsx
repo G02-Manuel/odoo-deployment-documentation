@@ -7,7 +7,7 @@ import {
 } from './OdooERP';
 
 export default {
-    title: 'Deployment/OdooERP',
+    title: 'B. Deployment/OdooERP',
     component: GeneralEnviroment, ExternalModule, ServerConfMethod, HttpConfMethod, XMLRpcMethod,
     WebInterfaceMethod, TestMethod, LoggingMethod, SMTPMethod, DataBaseMethod, WorldMethod, SecurityMethod,
     AdvancedMethod, MultiProcessMethod,

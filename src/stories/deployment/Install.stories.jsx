@@ -3,7 +3,7 @@ import React from 'react';
 import { Install } from './Install';
 
 export default {
-    title: 'Deployment/Install',
+    title: 'B. Deployment/Install',
     component: Install,
     parameters: {
         // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout

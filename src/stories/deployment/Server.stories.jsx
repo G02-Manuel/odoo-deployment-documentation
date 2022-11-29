@@ -3,7 +3,7 @@ import React from 'react';
 import { ServerMethod, EnviromentMethod } from './Server';
 
 export default {
-    title: 'Deployment/Server',
+    title: 'B. Deployment/Server',
     component: ServerMethod, EnviromentMethod,
     parameters: {
         // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout

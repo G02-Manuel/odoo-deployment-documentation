@@ -3,7 +3,7 @@ import React from 'react';
 import { WebApp, BackendApp } from './Apparance';
 
 export default {
-    title: 'Configuration/Apparance',
+    title: 'E. Configuration/Apparance',
     component: WebApp, BackendApp,
     parameters: {
         // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout

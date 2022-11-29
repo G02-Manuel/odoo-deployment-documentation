@@ -3,7 +3,7 @@ import React from 'react';
 import { NginxMehotd } from './ Nginx';
 
 export default {
-    title: 'Nginx/Configuration',
+    title: 'C. Nginx/Configuration',
     component: NginxMehotd,
     parameters: {
         // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout

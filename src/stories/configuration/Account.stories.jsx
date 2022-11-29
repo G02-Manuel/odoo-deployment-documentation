@@ -3,7 +3,7 @@ import React from 'react';
 import { ChartAccountConf, NCFConf, FiscalYearConf, CurrencyConf, DGIIReport, DataTemplate } from './Account';
 
 export default {
-    title: 'Configuration/Accounting',
+    title: 'E. Configuration/Accounting',
     component: ChartAccountConf, NCFConf, FiscalYearConf, CurrencyConf, DGIIReport, DataTemplate,
     parameters: {
         // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout

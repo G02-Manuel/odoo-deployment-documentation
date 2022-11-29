@@ -3,7 +3,7 @@ import React from 'react';
 import { DomainMethod } from './Domain';
 
 export default {
-    title: 'Domain/DNS',
+    title: 'D. Domain/DNS',
     component: DomainMethod,
     parameters: {
         // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
